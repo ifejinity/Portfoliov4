@@ -8,7 +8,7 @@ module.exports = {
         'navDesktopBtn': 'repeat(4, auto)',
       },
       width: {
-        'logo': '60px',
+        'logo': '50px',
       }, 
     },
   },
