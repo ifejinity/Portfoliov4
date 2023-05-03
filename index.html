@@ -9,15 +9,15 @@
     <title>Jeffrey Lonzanida</title>
 </head>
 <body class="flex justify-center">
-    <div class="w-full flex flex-col justify-center max-w-screen-xl mx-5">
+    <div class="w-full flex flex-col justify-center max-w-screen-xl mx-5" id="pageWrapper">
         <header class="relative grid grid-cols-navDesktop gap-10 w-full py-3 items-center z-20" id="navDesktop">
             <img class="w-logo" src="./src/resources/logo.png" alt="logo" srcset="">
             <!-- navbar desktop -->
-            <div class="relative hidden sm:grid grid-cols-navDesktopBtn gap-10 font-semibold text-gray-900">
-                <button>Home</button>
-                <button>About</button>
-                <button>Skills</button>
-                <button>Projects</button>
+            <div class="relative hidden sm:grid grid-cols-navDesktopBtn gap-10 font-semibold text-theme-black">
+                <button class=" hover:text-theme-dblue">Home</button>
+                <button class=" hover:text-theme-dblue">About</button>
+                <button class=" hover:text-theme-dblue">Skills</button>
+                <button class=" hover:text-theme-dblue">Projects</button>
             </div>
             <!-- nav mobile -->
             <input type="checkbox" id="checkboxNavbar">
@@ -28,12 +28,20 @@
             </label>
         </header>
         <!-- Hero section -->
-        <section class="flex flex-col justify-center items-center z-0" id="hero">
-            <p class="text-2xl">Jeffrey Lonzanida</p>
+        <section class="flex md:flex-row flex-col justify-center items-center gap-5 z-0 h-fit mt-10" id="hero">
+            <!-- Hero section left side -->
+            <div class="w-full flex flex-col justify-center md:justify-start h-fit">
+                <h1 class="text-theme-black font-black text-3xl">I'm</h1>
+                <h1 class="text-theme-dblue font-black text-5xl h-full">Jeffrey Lonzanida</h1>
+            </div>
+            <!-- hero section right side -->
+            <div class="relative w-full flex justify-center md:justify-end">
+                <img class="max-w-lg w-full" src="./src/resources/hero-geometry.png" alt="geometry" srcset="">
+            </div>
         </section>
     </div>
     <!-- navbar mobile -->
-    <div class="flex flex-col z-10 fixed h-screen w-screen sm:hidden gap-5 py-28 px-5 font-semibold ease-in-out duration-200 bg-white" id="navbarMobile">
+    <div class="flex flex-col z-10 fixed h-screen w-screen sm:hidden overflow-hidden gap-5 py-28 px-5 font-semibold ease-in-out duration-200 bg-theme-white/80" id="navbarMobile">
         <button class=" text-lg rounded-xl h-11">Home</button>
         <button class="text-lg rounded-xl h-11">About</button>
         <button class="text-lg rounded-xl h-11">Skills</button>
