@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       gridTemplateColumns: {
         'navDesktop': '1fr auto',
-        'navDesktopBtn': 'repeat(4, auto)',
+        'navDesktopBtn': 'repeat(5, auto)',
       },
       width: {
         'logo': '50px',
