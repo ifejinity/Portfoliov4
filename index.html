@@ -9,7 +9,7 @@
     <title>Jeffrey Lonzanida</title>
 </head>
 <body class="flex justify-center dark:bg-theme-black">
-    <div class="w-full flex flex-col justify-center max-w-screen-xl mx-5" id="pageWrapper">
+    <div class="w-full flex flex-col justify-center max-w-[1440px] mx-5" id="pageWrapper">
         <header class="sticky top-0 grid grid-cols-navDesktop gap-10 w-full py-3 items-center z-20" id="navDesktop">
             <img class="w-logo dark:hidden" src="./src/resources/logo.png" alt="logo" srcset="">
             <img class="w-logo hidden dark:block" src="./src/resources/logo-dark.png" alt="logo" srcset="">
@@ -35,15 +35,15 @@
             </label>
         </header>
         <!-- Hero section -->
-        <section class="relative flex md:flex-row flex-col justify-center items-center gap-5 z-0 h-fit mt-10" id="hero">
+        <section class="relative flex md:flex-row flex-col justify-center items-center gap-5 z-0 h-fit mt-10 md:mx-[10%] mx-[0]" id="hero">
             <!-- Hero section left side -->
-            <div class="relative w-full flex flex-col justify-center md:justify-start h-fit">
-                <h1 class="text-theme-black font-black text-3xl dark:text-theme-white">I'm</h1>
-                <h1 class="text-theme-dblue font-black text-5xl h-full">Jeffrey Lonzanida</h1>
+            <div class="relative md:w-[45%] flex flex-col justify-center md:justify-start h-fit">
+                <h1 class="text-theme-black font-black text-3xl md:text-4xl dark:text-theme-white md:text-start text-center">I'm</h1>
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-black text-4xl md:text-5xl h-full md:text-start text-center">Jeffrey Lonzanida</h1>
             </div>
             <!-- hero section right side -->
-            <div class="relative w-full flex justify-center md:justify-end">
-                <img class="max-w-lg md:max-w-xl w-full" src="./src/resources/hero-geometry.png" alt="geometry" srcset="">
+            <div class="relative md:w-[55%] flex justify-center md:justify-end">
+                <img class="max-w-lg md:max-w-none w-full" src="./src/resources/bg-back2.png" alt="geometry" srcset="">
             </div>
         </section>
     </div>
