@@ -7,46 +7,76 @@
     <link href="./dist/output.css" rel="stylesheet">
     <link rel="shortcut icon" href="./src/resources/logo.png" type="image/x-icon">
     <title>Jeffrey Lonzanida</title>
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body class="flex justify-center dark:bg-theme-black">
-    <div class="w-full flex flex-col justify-center max-w-[1440px] mx-5" id="pageWrapper">
-        <header class="sticky top-0 grid grid-cols-navDesktop gap-10 w-full py-3 items-center z-20" id="navDesktop">
-            <img class="w-logo dark:hidden" src="./src/resources/logo.png" alt="logo" srcset="">
-            <img class="w-logo hidden dark:block" src="./src/resources/logo-dark.png" alt="logo" srcset="">
-            <!-- navbar desktop -->
-            <div class="relative hidden sm:grid grid-cols-navDesktopBtn gap-10 font-semibold text-theme-black dark:text-theme-white">
-                <button class=" hover:text-theme-dblue">Home</button>
-                <button class=" hover:text-theme-dblue">About</button>
-                <button class=" hover:text-theme-dblue">Skills</button>
-                <button class=" hover:text-theme-dblue">Projects</button>
-                <label class="switch">
-                    <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
-                    <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
-                    <input type="checkbox" class="input">
-                    <span class="slider"></span>
-                  </label>
-            </div>
-            <!-- nav mobile -->
-            <input type="checkbox" id="checkboxNavbar">
-            <label for="checkboxNavbar" class="toggle sm:hidden flex">
-                <div class="bars dark:bg-theme-white" id="bar1"></div>
-                <div class="bars dark:bg-theme-white" id="bar2"></div>
-                <div class="bars dark:bg-theme-white" id="bar3"></div>
+<body class="flex items-center flex-col dark:bg-theme-black bg-theme-white overflow-x-hidden">
+    <!-- header -->
+    <header class="sticky top-0 grid dark:bg-theme-black/80 bg-theme-white/80 backdrop-blur-sm grid-cols-navDesktop gap-10 w-full py-3 items-center z-20 px-5 max-w-[1440px]" id="navDesktop">
+        <img class="w-logo dark:hidden" src="./src/resources/logo.png" alt="logo" srcset="">
+        <img class="w-logo hidden dark:block" src="./src/resources/logo-dark.png" alt="logo" srcset="">
+
+        <!-- navbar desktop -->
+        <div class="relative hidden sm:grid grid-cols-navDesktopBtn gap-10 font-semibold text-theme-black dark:text-theme-white">
+            <button class=" hover:text-theme-dblue">Home</button>
+            <button class=" hover:text-theme-dblue">About</button>
+            <button class=" hover:text-theme-dblue">Skills</button>
+            <button class=" hover:text-theme-dblue">Projects</button>
+            <label class="switch">
+                <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
+                <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
+                <input type="checkbox" class="input">
+                <span class="slider"></span>
             </label>
-        </header>
+        </div>
+
+        <!-- nav mobile -->
+        <input type="checkbox" id="checkboxNavbar">
+        <label for="checkboxNavbar" class="toggle sm:hidden flex">
+            <div class="bars dark:bg-theme-white" id="bar1"></div>
+            <div class="bars dark:bg-theme-white" id="bar2"></div>
+            <div class="bars dark:bg-theme-white" id="bar3"></div>
+        </label>
+    </header>
+    <div class="absolute max-w-[1440px] w-full">
+        <img class="w-[30vw] max-w-[400px] min-w-[200px] absolute md:top-[200px] right-[10vw] xl:right-[100px] top-[250px]" src="./src/resources/g1.png" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"  data-aos-delay="1000" alt="" srcset="">
+        <img class="w-[15vw] max-w-[200px] min-w-[100px] absolute md:top-[150px] right-[30vw] xl:right-[450px] top-[450px]" src="./src/resources/g2.png" data-aos="zoom-in-down" data-aos-delay="1000" alt="" srcset="">
+    </div>
+    <!-- sections -->
+    <div class="w-full flex flex-col justify-center max-w-[1440px] bg-theme-white/30 dark:bg-theme-black/30 overflow-x-hidden backdrop-blur-xl" id="pageWrapper">
+
         <!-- Hero section -->
-        <section class="relative flex md:flex-row flex-col justify-center items-center gap-5 z-0 h-fit mt-10 md:mx-[10%] mx-[0]" id="hero">
+        <section class="relative flex md:flex-row flex-col justify-center items-center gap-5 z-0 h-fit mt-10 md:mx-[10%] mx-[5%]" id="hero">
             <!-- Hero section left side -->
             <div class="relative md:w-[45%] flex flex-col justify-center md:justify-start h-fit">
-                <h1 class="text-theme-black font-black text-3xl md:text-4xl dark:text-theme-white md:text-start text-center">I'm</h1>
-                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-black text-4xl md:text-5xl h-full md:text-start text-center">Jeffrey Lonzanida</h1>
+                <h1 class="text-theme-black font-black text-3xl md:text-[4vw] xl:text-[50px] leading-none dark:text-theme-white md:text-start text-center" data-aos="fade-right" data-aos-delay="100">I am</h1>
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-black text-4xl md:text-[6vw] xl:text-[80px] leading-none h-full md:text-start text-center" data-aos="fade-right" data-aos-delay="400">Jeffrey Lonzanida</h1>
             </div>
             <!-- hero section right side -->
             <div class="relative md:w-[55%] flex justify-center md:justify-end">
-                <img class="max-w-lg md:max-w-none w-full" src="./src/resources/bg-back2.png" alt="geometry" srcset="">
+                <img data-aos="zoom-in" data-aos-delay="700" class="max-w-lg md:max-w-none w-full" src="./src/resources/bg-back2.png" alt="geometry" srcset="">
             </div>
         </section>
+
+        <!-- about -->
+        <section class="mt-52 w-full h-[500px] flex flex-col items-center">
+            <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
+            <div>
+
+            </div>
+        </section>
+
+        <!-- skills -->
+        <section class="mt-52 w-full h-[500px] flex flex-col items-center">
+            <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">SKILLS</h1>
+        </section>
+
+        <!-- projects -->
+        <section class="mt-52 w-full h-[500px] flex flex-col items-center">
+            <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">PROJECTS</h1>
+        </section>
     </div>
+
     <!-- navbar mobile -->
     <div class="flex flex-col items-center backdrop-blur-sm z-10 fixed h-screen w-screen sm:hidden overflow-hidden gap-5 py-28 px-5 font-semibold ease-in-out duration-200 bg-theme-white/80 dark:bg-theme-black/80" id="navbarMobile">
         <button class=" text-lg rounded-xl h-11 hover:text-theme-dblue dark:text-theme-white">Home</button>
@@ -65,5 +95,9 @@
 
     <!-- script -->
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
