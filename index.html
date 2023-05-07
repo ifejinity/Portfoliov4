@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./dist/output.css" rel="stylesheet">
-    <link rel="shortcut icon" href="./src/resources/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/resources/logo-gradient.png" type="image/x-icon">
     <title>Jeffrey Lonzanida</title>
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- bootstrap icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body class="flex items-center flex-col dark:bg-theme-black bg-theme-white overflow-x-hidden">
     <!-- header -->
@@ -40,9 +42,10 @@
     </header>
     <div class="absolute max-w-[1440px] w-full">
         <img class="w-[30vw] max-w-[400px] min-w-[200px] absolute md:top-[200px] right-[10vw] xl:right-[100px] top-[250px]" src="./src/resources/g1.png" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"  data-aos-delay="1000" alt="" srcset="">
-        <img class="w-[15vw] max-w-[200px] min-w-[100px] absolute md:top-[150px] right-[30vw] xl:right-[450px] top-[450px]" src="./src/resources/g2.png" data-aos="zoom-in-down" data-aos-delay="1000" alt="" srcset="">
+        <img class="w-[15vw] max-w-[200px] min-w-[100px] absolute md:top-[150px] right-[30vw] xl:right-[450px] top-[450px]" src="./src/resources/g2.png" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-delay="1000" alt="" srcset="">
+        <!-- <img class="w-[40vw] max-w-[500px] min-w-[200px] absolute xl:top-[1000px] lg:top-[900px] md:top-[800px] left-[10vw] xl:right-[450px] top-[800px]" src="./src/resources/g1.png" data-aos="zoom-in" data-aos-easing="ease-out-cubic" data-aos-delay="100" alt="" srcset=""> -->
     </div>
-    <!-- sections -->
+        <!-- sections -->
     <div class="w-full flex flex-col justify-center max-w-[1440px] bg-theme-white/30 dark:bg-theme-black/30 overflow-x-hidden backdrop-blur-xl" id="pageWrapper">
 
         <!-- Hero section -->
@@ -50,7 +53,7 @@
             <!-- Hero section left side -->
             <div class="relative md:w-[45%] flex flex-col justify-center md:justify-start h-fit">
                 <h1 class="text-theme-black font-black text-3xl md:text-[4vw] xl:text-[50px] leading-none dark:text-theme-white md:text-start text-center" data-aos="fade-right" data-aos-delay="100">I am</h1>
-                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% font-black text-4xl md:text-[6vw] xl:text-[80px] leading-none h-full md:text-start text-center" data-aos="fade-right" data-aos-delay="400">Jeffrey Lonzanida</h1>
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-4xl md:text-[6vw] xl:text-[80px] leading-none h-full md:text-start text-center" data-aos="fade-right" data-aos-delay="400">Jeffrey Lonzanida</h1>
             </div>
             <!-- hero section right side -->
             <div class="relative md:w-[55%] flex justify-center md:justify-end">
@@ -59,20 +62,32 @@
         </section>
 
         <!-- about -->
-        <section class="mt-52 w-full h-[500px] flex flex-col items-center">
-            <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
-            <div>
-
+        <section class="relative mt-52 h-full flex flex-col items-center md:mx-[10%] mx-[5%] gap-2" id="about">
+            <div class="grid grid-cols-[repeat(2,auto)]">
+                <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ME</h1>
+            </div>
+            <div class="flex md:flex-row flex-col w-full flex-wrap gap-10 justify-center items-center">
+                <div class="relative w-[300px] h-[350px] shadow-xl border-solid border-theme-black rounded-lg p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
+                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center">
+                    <i class="bi bi-person-lines-fill text-[6rem]"></i>
+                    <h1 class="font-bold text-[1.1rem]">Personal Information</h1>
+                </div>
+                <div class="relative w-[300px] h-[350px] shadow-xl border-solid border-theme-black rounded-lg p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
+                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center">
+                    <i class="bi bi-book text-[6rem]"></i>
+                    <h1 class="font-bold text-[1.1rem]">Educational Attaintment</h1>
+                </div>
             </div>
         </section>
 
         <!-- skills -->
-        <section class="mt-52 w-full h-[500px] flex flex-col items-center">
+        <section class="relative mt-52 w-full h-fit flex flex-col items-center">
             <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">SKILLS</h1>
         </section>
 
         <!-- projects -->
-        <section class="mt-52 w-full h-[500px] flex flex-col items-center">
+        <section class="relative mt-52 w-full h-[500px] flex flex-col items-center">
             <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">PROJECTS</h1>
         </section>
     </div>
