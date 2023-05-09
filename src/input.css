@@ -177,3 +177,14 @@
   .input:checked + .slider:before {
     transform: translateX(30px);
   }
+
+  /* modal content scroll bar */
+  #modalContent::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  #modalContent {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
