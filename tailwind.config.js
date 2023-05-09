@@ -16,6 +16,10 @@ module.exports = {
       '5xl': '3.052rem',
     },
     extend: {
+      screens: {
+        'xxs': '320px',
+        'xs': '425px',
+      },
       gridTemplateColumns: {
         'navDesktop': '1fr auto',
         'navDesktopBtn': 'repeat(5, auto)',
