@@ -65,8 +65,8 @@ for(let aboutcardsItem of aboutCards){
         if (this === aboutCards[0]){
             modalHeader.innerHTML = "Personal Information";
             modalContent.innerHTML =`
-            <div class="w-full text-theme-black dark:text-theme-white grid xs:grid-cols-2 grid-cols-1 z-[0] xs:gap-2 text-center xs:text-start">
-                <div>
+            <div class="w-full text-theme-black dark:text-theme-white grid xs:grid-cols-2 grid-cols-1 z-[0] gap-3 text-center xs:text-start">
+                <div class="flex flex-col gap-2">
                     <p><strong>Name: </strong> <br> Jeffrey B. Lonzanida</p>
                     <p><strong>Sex: </strong> <br>  Male</p>
                     <p><strong>Birthday: </strong> <br> January 08, 2001</p>
@@ -74,7 +74,7 @@ for(let aboutcardsItem of aboutCards){
                     <p><strong>Birth Place: </strong> <br> Taytay, Rizal</p>
                     <p><strong>Address: </strong> <br> #52 Sitio Tibagan, Brgy. Dolores, Taytay, Rizal</p>
                 </div>
-                <div>
+                <div class="flex flex-col gap-2">
                     <p><strong>Citizenship: </strong> <br> Filipino</p>
                     <p><strong>Religion: </strong> <br> Catholic</p>
                     <p><strong>Marital Status: </strong> <br> Married</p>
