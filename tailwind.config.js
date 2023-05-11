@@ -23,6 +23,8 @@ module.exports = {
       gridTemplateColumns: {
         'navDesktop': '1fr auto',
         'navDesktopBtn': 'repeat(5, auto)',
+        'timeLineDesktop' : '1fr auto 1fr',
+        'timeLineMobile' : 'auto 1fr',
       },
       colors:{
         'theme-black': '#1D242B',
