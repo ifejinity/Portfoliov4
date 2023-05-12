@@ -211,8 +211,28 @@ for(let aboutcardsItem of aboutCards){
         if (this === aboutCards[2]){
             modalHeader.innerHTML = "Awards & Certifications";
             modalContent.innerHTML =`
-            <div class="w-full text-theme-black dark:text-theme-white grid xs:grid-cols-2 grid-cols-1 z-[0] xs:gap-2 text-center xs:text-start">
-                
+            <div class="text-theme-black dark:text-theme-white z-[0]">
+                <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5">
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/1.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/2.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/3.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/4.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/CERTIFICATE-OF-PARTICIPANTS-37-1.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/Git and Github.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/TAILWIND - LONZANIDA.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/INTERNSHIP ORIENTATION - LONZANIDA.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184548.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184617.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184703.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184830.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184956.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185046.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185132.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185235.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185349.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185501.jpg"/>
+                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_210451.jpg"/>
+                </div>
             </div>
             `;
             aboutModal.style.display = "flex";
