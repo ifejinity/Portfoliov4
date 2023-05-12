@@ -65,7 +65,7 @@ for(let aboutcardsItem of aboutCards){
         if (this === aboutCards[0]){
             modalHeader.innerHTML = "Personal Information";
             modalContent.innerHTML =`
-            <div class="w-full text-theme-black dark:text-theme-white grid xs:grid-cols-2 grid-cols-1 z-[0] gap-3 text-center xs:text-start">
+            <div class="text-theme-black dark:text-theme-white grid xs:grid-cols-2 grid-cols-1 z-[0] gap-3 text-center xs:text-start">
                 <div class="flex flex-col gap-2">
                     <p><strong>Name: </strong> <br> Jeffrey B. Lonzanida</p>
                     <p><strong>Sex: </strong> <br>  Male</p>
@@ -90,11 +90,11 @@ for(let aboutcardsItem of aboutCards){
         if (this === aboutCards[1]){
             modalHeader.innerHTML = "Educational Attainment";
             modalContent.innerHTML =`
-            <div class="w-full text-theme-black dark:text-theme-white flex justify-center z-[0] m-[10px]">
+            <div class="text-theme-black dark:text-theme-white flex justify-center z-[0] m-[10px]">
                 <div class="grid-cols-timeLineDesktop w-full sm:grid hidden">
 
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-3 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mr-5 p-3 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">University of Rizal System</p>
                             <p class="text-[0.8rem] text-center">Bachelor of Science in Information Technology</p>
@@ -113,7 +113,7 @@ for(let aboutcardsItem of aboutCards){
                         <div class="bg-gradient-to-r from-teal-300 to-sky-500 w-[8px] h-full z-[0]"></div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-5 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit ml-5 p-5 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">College of Arts and Sciences of Asia and the Pacific</p>
                             <p class="text-[0.8rem] text-center">Information and Communication Technology</p>
@@ -122,7 +122,7 @@ for(let aboutcardsItem of aboutCards){
                     </div>
 
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-5 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mr-5 p-5 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">Casimiro A. Ynares Sr. Memorial National Highschool</p>
                             <p class="text-[0.8rem]">2013-2017</p>
@@ -140,7 +140,7 @@ for(let aboutcardsItem of aboutCards){
                         <div class="bg-gradient-to-r from-teal-300 to-sky-500 w-[8px] h-full z-[0]"></div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-5 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit ml-5 p-5 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500">
                             <p class="text-center text-[1rem] font-medium leading-none">Taytay Elementary School Unit-1</p>
                             <p class="text-[0.8rem]">2007-2013</p>
@@ -156,7 +156,7 @@ for(let aboutcardsItem of aboutCards){
                         <div class="bg-gradient-to-r from-teal-300 to-sky-500 w-[8px] h-full z-[0]"></div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-3 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit ml-5 p-3 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">University of Rizal System</p>
                             <p class="text-[0.8rem] text-center">Bachelor of Science in Information Technology</p>
@@ -169,7 +169,7 @@ for(let aboutcardsItem of aboutCards){
                         <div class="bg-gradient-to-r from-teal-300 to-sky-500 w-[8px] h-full z-[0]"></div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-5 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit ml-5 p-5 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">College of Arts and Sciences of Asia and the Pacific</p>
                             <p class="text-[0.8rem] text-center">Information and Communication Technology</p>
@@ -182,7 +182,7 @@ for(let aboutcardsItem of aboutCards){
                         <div class="bg-gradient-to-r from-teal-300 to-sky-500 w-[8px] h-full z-[0]"></div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-5 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit ml-5 p-5 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">Casimiro A. Ynares Sr. Memorial National Highschool</p>
                             <p class="text-[0.8rem]">2013-2017</p>
@@ -194,7 +194,7 @@ for(let aboutcardsItem of aboutCards){
                         <div class="bg-gradient-to-r from-teal-300 to-sky-500 w-[8px] h-full z-[0]"></div>
                     </div>
                     <div class="flex justify-center">
-                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit mx-5 p-5 rounded-xl shadow-md
+                        <div class="w-full bg-theme-black/5 dark:bg-theme-white/5 flex flex-col justify-center items-center h-fit ml-5 p-5 rounded-xl shadow-md
                         hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 mb-5">
                             <p class="text-center text-[1rem] font-medium leading-none">Taytay Elementary School Unit-1</p>
                             <p class="text-[0.8rem]">2007-2013</p>
