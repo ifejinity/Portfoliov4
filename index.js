@@ -222,32 +222,31 @@ for(let aboutcardsItem of aboutCards){
             body.style.overflowY = "hidden";
             modalHeader.innerHTML = "Awards & Certifications";
             modalContent.innerHTML =`
-            <div class="text-theme-black dark:text-theme-white z-[0]">
+            <div class="text-theme-black dark:text-theme-white mt-2 z-[0]">
                 <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5">
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/1.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/2.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/3.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/4.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/CERTIFICATE-OF-PARTICIPANTS-37-1.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/Git and Github.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/TAILWIND - LONZANIDA.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/INTERNSHIP ORIENTATION - LONZANIDA.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184548.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184617.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184703.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184830.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184956.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185046.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185132.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185235.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185349.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185501.jpg"/>
-                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_210451.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/1.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/2.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/3.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/4.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/CERTIFICATE-OF-PARTICIPANTS-37-1.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/Git and Github.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/TAILWIND - LONZANIDA.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/INTERNSHIP ORIENTATION - LONZANIDA.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_184548.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_184617.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_184703.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_184830.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_184956.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_185046.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_185132.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_185235.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_185349.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_185501.jpg"/>
+                    <img id="certImg" class="hover:drop-shadow-xl grayscale hover:grayscale-0 cursor-zoom-in hover:-translate-y-2 transition-all" src="./src/resources/certificates/IMG_20230313_210451.jpg"/>
                 </div>
             </div>
             `;
             const certImg = document.querySelectorAll("#certImg");
-            console.log(certImg)
             for (certImgItems of certImg){
                 certImgItems.addEventListener("click", function(){
                     for(let i = 0; i < certImg.length; i++){
