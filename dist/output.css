@@ -2012,16 +2012,12 @@ video {
   background-color: rgb(250 250 250 / 0.8);
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.bg-\[url\(\'\/src\/resources\/bg-skills\.jpg\'\)\] {
-  background-image: url('/src/resources/bg-skills.jpg');
-}
-
 .bg-\[url\(\'\.\.\/src\/resources\/bg-skills\.jpg\'\)\] {
   background-image: url('../src/resources/bg-skills.jpg');
+}
+
+.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .from-teal-300 {
