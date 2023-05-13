@@ -93,27 +93,29 @@
         <!-- about -->
         <div id="about" class="scroll-mt-[-150px]"></div>
         <section class="relative mt-52 h-full flex flex-col items-center md:mx-[10%] mx-[5%] gap-2 max-w-[1440px]">
-            <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
+            <div class="grid grid-cols-[repeat(2,auto)] mb-2">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ME</h1>
             </div>
 
             <div class="relative flex md:flex-row flex-col w-full flex-wrap gap-10 md:justify-center items-center">
-                <div id="aboutCards" class="relative w-[280px] h-[300px] shadow-xl border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
-                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center transition-all" 
-                data-aos="fade-up" data-aos-delay="100">
+                <div id="aboutCards" class="relative w-[280px] h-[300px] border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
+                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
+                hover:drop-shadow-xl hover:-translate-y-3 transition-all">
                     <i class="bi bi-person-lines-fill text-[6rem]"></i>
                     <h1 class="font-bold text-[1rem]">Personal Information</h1>
                 </div>
 
-                <div id="aboutCards" class="relative w-[280px] h-[300px] shadow-xl border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
-                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                <div id="aboutCards" class="relative w-[280px] h-[300px] border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
+                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
+                hover:drop-shadow-xl hover:-translate-y-3 transition-all">
                     <i class="bi bi-book text-[6rem]"></i>
                     <h1 class="font-bold text-[1rem]">Educational Attainment</h1>
                 </div>
 
-                <div id="aboutCards" class="relative w-[280px] h-[300px] shadow-xl border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
-                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center" data-aos="fade-up" data-aos-delay="100">
+                <div id="aboutCards" class="relative w-[280px] h-[300px] border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
+                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
+                hover:drop-shadow-xl hover:-translate-y-3 transition-all">
                     <i class="bi bi-award text-[6rem]"></i>
                     <h1 class="font-bold text-[1rem]">Awards & Certifications</h1>
                 </div>
@@ -122,7 +124,7 @@
 
         <!-- skills -->
         <div id="skills" class="scroll-mt-[-150px]"></div>
-        <section id="skillsSec" class="relative mt-52 w-full h-[700px] flex flex-col items-center bg-[url('../src/resources/bg-skills.jpg')]
+        <section id="skillsSec" class="relative mt-52 w-full h-fit flex flex-col items-center bg-[url('../src/resources/bg-skills.jpg')]
         bg-no-repeat bg-fixed bg-cover bg-center">
             <div class="custom-shape-divider-top-1683958950 fill-theme-white dark:fill-theme-black">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -131,14 +133,53 @@
                     <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
                 </svg>
             </div>
-            <div class="grid grid-cols-[repeat(2,auto)] mb-2 max-w-[1440px]" data-aos="fade-down" data-aos-delay="100">
-                <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">SKILLS</h1>
+            <div class="grid grid-cols-1 mb-2 max-w-[1440px] text-center">
+                <h1 class="font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">SKILLS</h1>
+                <p class="font-medium text-[1.2rem]">I have experience with these technologies</p>
             </div>
-            <div class="flex flex-wrap gap-5 justify-center max-w-[1440px]">
-                <div class="bg-theme-black/5 dark:bg-theme-white/5 h-[80px] w-[80px] rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl">
-
-                </div>
+            <div class="grid lg:grid-cols-7 sm:grid-cols-5 xs:grid-cols-4 grid-cols-3 xs:gap-5 gap-4 items-center justify-center max-w-[1440px] mx-[5%] md:mx-[10%] mt-2 mb-44">
+                <img src="./src/resources/skills/react.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/tailwind.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/material ui.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/html5.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/css.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/js.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/jquery.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/bootstrap.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/mysql.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/php.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/prestashop.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/wix.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/unity.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/git.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/github.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/csharp.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/c++.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/java.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/figma.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/ai.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
+                <img src="./src/resources/skills/ps.jpg" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
+                hover:drop-shadow-xl p-2 bg-white">
             </div>
             <div class="custom-shape-divider-bottom-1683960546 fill-theme-white dark:fill-theme-black">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -151,8 +192,8 @@
 
         <!-- projects -->
         <div id="projects" class="scroll-mt-[-150px]"></div>
-        <section class="relative mt-52 w-full flex flex-col items-center max-w-[1440px]">
-            <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
+        <section class="relative mt-32 w-full flex flex-col items-center max-w-[1440px]">
+            <div class="grid grid-cols-[repeat(2,auto)] mb-2">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">PROJECT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
             </div>
@@ -161,7 +202,7 @@
         <!-- contacts -->
         <div id="contacts" class="scroll-mt-[-150px] "></div>
         <section class="relative mt-52 w-full flex flex-col items-center max-w-[1440px]">
-            <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
+            <div class="grid grid-cols-[repeat(2,auto)] mb-2">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">CONTACT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
             </div>
