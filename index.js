@@ -52,17 +52,26 @@ window.addEventListener("load", function(){
     }
 });
 
+// closeCert
+const certModal = document.querySelector("#certModal");
+const certModalItem = document.querySelector("#certItems");
+certModalItem.addEventListener("click",function(){
+    certModal.style.display = "none";
+});
+
 // About cards
 const aboutCards = document.querySelectorAll("#aboutCards");
 const aboutModal = document.querySelector("#aboutModal");
 const modalHeader = document.querySelector("#modalHeader");
 const modalContent = document.querySelector("#modalContent");
+const body = document.querySelector("body");
 
 for(let aboutcardsItem of aboutCards){
     aboutcardsItem.addEventListener("click", function(){
 
         // personal information
         if (this === aboutCards[0]){
+            body.style.overflowY = "hidden";
             modalHeader.innerHTML = "Personal Information";
             modalContent.innerHTML =`
             <div class="text-theme-black dark:text-theme-white grid xs:grid-cols-2 grid-cols-1 z-[0] gap-3 text-center xs:text-start">
@@ -88,6 +97,7 @@ for(let aboutcardsItem of aboutCards){
 
         // educational attaintment
         if (this === aboutCards[1]){
+            body.style.overflowY = "hidden";
             modalHeader.innerHTML = "Educational Attainment";
             modalContent.innerHTML =`
             <div class="text-theme-black dark:text-theme-white flex justify-center z-[0] m-[10px]">
@@ -209,32 +219,45 @@ for(let aboutcardsItem of aboutCards){
 
         // Awards and certifications
         if (this === aboutCards[2]){
+            body.style.overflowY = "hidden";
             modalHeader.innerHTML = "Awards & Certifications";
             modalContent.innerHTML =`
             <div class="text-theme-black dark:text-theme-white z-[0]">
                 <div class="grid md:grid-cols-3 xs:grid-cols-2 grid-cols-1 gap-5">
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/1.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/2.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/3.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/4.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/CERTIFICATE-OF-PARTICIPANTS-37-1.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/Git and Github.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/TAILWIND - LONZANIDA.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/INTERNSHIP ORIENTATION - LONZANIDA.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184548.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184617.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184703.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184830.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_184956.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185046.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185132.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185235.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185349.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_185501.jpg"/>
-                    <img class="shadow-lg grayscale hover:grayscale-0" src="./src/resources/certificates/IMG_20230313_210451.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/1.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/2.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/3.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/4.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/CERTIFICATE-OF-PARTICIPANTS-37-1.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/Git and Github.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/TAILWIND - LONZANIDA.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/INTERNSHIP ORIENTATION - LONZANIDA.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184548.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184617.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184703.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184830.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_184956.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185046.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185132.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185235.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185349.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_185501.jpg"/>
+                    <img id="certImg" class="shadow-lg grayscale hover:grayscale-0 cursor-zoom-in" src="./src/resources/certificates/IMG_20230313_210451.jpg"/>
                 </div>
             </div>
             `;
+            const certImg = document.querySelectorAll("#certImg");
+            console.log(certImg)
+            for (certImgItems of certImg){
+                certImgItems.addEventListener("click", function(){
+                    for(let i = 0; i < certImg.length; i++){
+                        if(this === certImg[i]){
+                            certModalItem.src = this.src;
+                            certModal.style.display = "flex";
+                        }
+                    }
+                });
+            }
             aboutModal.style.display = "flex";
         }
     });
@@ -243,5 +266,33 @@ for(let aboutcardsItem of aboutCards){
 // Close about modal
 const closeAboutModal = document.querySelector("#aboutmodalClose");
 closeAboutModal.addEventListener("click", function(){
+    body.style.overflowY = "scroll";
     aboutModal.style.display = "none";
 })
+
+// navigationDesktop
+const navButtonsDesktop = document.querySelectorAll("#navButton");
+
+for (let navButtonItems of navButtonsDesktop){
+    navButtonItems.addEventListener("click", function(){
+        if (this === navButtonsDesktop[0]){
+            window.scrollTo(0, 0);
+        }
+
+        if (this === navButtonsDesktop[1]){
+            window.location.href = "#about";
+        }
+
+        if (this === navButtonsDesktop[2]){
+            window.location.href = "#skills";
+        }
+
+        if (this === navButtonsDesktop[3]){
+            window.location.href = "#projects";
+        }
+
+        if (this === navButtonsDesktop[4]){
+            window.location.href = "#contacts";
+        }
+    });
+}

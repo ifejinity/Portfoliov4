@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en" class="dark scroll-smooth ease-in">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -34,6 +34,11 @@
         </div>
     </div>
 
+    <!-- modal certificates -->
+    <div id="certModal" class="w-full h-screen fixed z-[21] justify-center items-center hidden backdrop-blur-sm">
+        <img id="certItems" class="w-full max-w-[900px] cursor-zoom-out">
+    </div>
+
     <!-- header -->
     <header class="sticky top-0 grid dark:bg-theme-black/80 bg-theme-white/80 backdrop-blur-sm grid-cols-navDesktop gap-10 w-full py-3 items-center z-20 px-5 max-w-[1440px]" id="navDesktop">
         <img class="w-logo dark:hidden" src="./src/resources/logo.png" alt="logo" srcset="">
@@ -45,6 +50,7 @@
             <button id="navButton" class=" hover:text-theme-dblue">About</button>
             <button id="navButton" class=" hover:text-theme-dblue">Skills</button>
             <button id="navButton" class=" hover:text-theme-dblue">Projects</button>
+            <button id="navButton" class=" hover:text-theme-dblue">Contacts</button>
             <label class="switch">
                 <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
                 <span class="moon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="m223.5 32c-123.5 0-223.5 100.3-223.5 224s100 224 223.5 224c60.6 0 115.5-24.2 155.8-63.4 5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6-96.9 0-175.5-78.8-175.5-176 0-65.8 36-123.1 89.3-153.3 6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"></path></svg></span>   
@@ -85,13 +91,14 @@
         </section>
 
         <!-- about -->
-        <section class="relative mt-52 h-full flex flex-col items-center md:mx-[10%] mx-[5%] gap-2" id="about">
+        <div id="about" class="scroll-mt-[-150px]"></div>
+        <section class="relative mt-52 h-full flex flex-col items-center md:mx-[10%] mx-[5%] gap-2">
             <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ME</h1>
             </div>
 
-            <div class="flex md:flex-row flex-col w-full flex-wrap gap-10 justify-center items-center">
+            <div class="flex md:flex-row flex-col w-full flex-wrap gap-10 md:justify-center items-center">
                 <div id="aboutCards" class="relative w-[280px] h-[300px] shadow-xl border-solid border-theme-black rounded-xl p-5 bg-theme-black/5 dark:bg-theme-white/5 dark:text-theme-white
                 hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center" 
                 data-aos="fade-up" data-aos-delay="100">
@@ -114,6 +121,7 @@
         </section>
 
         <!-- skills -->
+        <div id="skills" class="scroll-mt-[-150px]"></div>
         <section class="relative mt-52 w-full h-fit flex flex-col items-center">
             <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">SKILL</h1>
@@ -122,12 +130,26 @@
         </section>
 
         <!-- projects -->
-        <section class="relative mt-52 w-full h-[500px] flex flex-col items-center">
+        <div id="projects" class="scroll-mt-[-150px]"></div>
+        <section class="relative mt-52 w-full flex flex-col items-center">
             <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">PROJECT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
             </div>
         </section>
+
+        <!-- contacts -->
+        <div id="contacts" class="scroll-mt-[-150px]"></div>
+        <section class="relative mt-52 w-full flex flex-col items-center">
+            <div class="grid grid-cols-[repeat(2,auto)] mb-2" data-aos="fade-down" data-aos-delay="100">
+                <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">CONTACT</h1>
+                <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
+            </div>
+        </section>
+
+        <footer class="w-full h-[100px]">
+
+        </footer>
     </div>
 
     <!-- navbar mobile -->
@@ -136,6 +158,7 @@
         <button class="text-lg rounded-xl h-11 hover:text-theme-dblue dark:text-theme-white">About</button>
         <button class="text-lg rounded-xl h-11 hover:text-theme-dblue dark:text-theme-white">Skills</button>
         <button class="text-lg rounded-xl h-11 hover:text-theme-dblue dark:text-theme-white">Projects</button>
+        <button class="text-lg rounded-xl h-11 hover:text-theme-dblue dark:text-theme-white">Contacts</button>
         <p class="dark:text-theme-white text-lg">Mode</p>
         <label class="switch">
             <span class="sun"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g fill="#ffd43b"><circle r="5" cy="12" cx="12"></circle><path d="m21 13h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm-17 0h-1a1 1 0 0 1 0-2h1a1 1 0 0 1 0 2zm13.66-5.66a1 1 0 0 1 -.66-.29 1 1 0 0 1 0-1.41l.71-.71a1 1 0 1 1 1.41 1.41l-.71.71a1 1 0 0 1 -.75.29zm-12.02 12.02a1 1 0 0 1 -.71-.29 1 1 0 0 1 0-1.41l.71-.66a1 1 0 0 1 1.41 1.41l-.71.71a1 1 0 0 1 -.7.24zm6.36-14.36a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm0 17a1 1 0 0 1 -1-1v-1a1 1 0 0 1 2 0v1a1 1 0 0 1 -1 1zm-5.66-14.66a1 1 0 0 1 -.7-.29l-.71-.71a1 1 0 0 1 1.41-1.41l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.29zm12.02 12.02a1 1 0 0 1 -.7-.29l-.66-.71a1 1 0 0 1 1.36-1.36l.71.71a1 1 0 0 1 0 1.41 1 1 0 0 1 -.71.24z"></path></g></svg></span>
