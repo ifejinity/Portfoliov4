@@ -92,18 +92,18 @@
         <!-- about -->
         <div id="about" class="scroll-mt-[-150px]"></div>
 
-        <img class="absolute z-[-1] w-[350px] left-0 md:top-[400px] top-[550px]" src="./src/resources/about-elem.png" alt="">
+        <img class="absolute z-[-1] lg:w-[350px] sm:w-[300px] w-[250px] left-0 md:top-[400px] top-[550px]" src="./src/resources/about-elem.png" alt="">
 
-        <img class="absolute z-[-1] w-[400px] right-0 md:top-[700px] top-[1400px]" src="./src/resources/about-elem2.png" alt="">
+        <img class="absolute z-[-1] lg:w-[400px] sm:w-[350px] w-[300px]  right-0 md:top-[700px] sm:top-[900px] top-[1000px]" src="./src/resources/about-elem2.png" alt="">
 
-        <section class="relative mt-52 h-full flex flex-col items-center md:mx-[10%] mx-[5%] gap-2 max-w-[1440px]">
+        <section class="relative mt-52 flex flex-col items-center md:mx-[10%] mx-[5%] gap-2 max-w-[1440px] w-[-webkit-fill-available]">
             <div class="grid grid-cols-[repeat(2,auto)]">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ME</h1>
             </div>
 
             <p class="mb-5 text-justify text-theme-black dark:text-theme-white font-medium">Hello, my name is Jeffrey Lonzanida and I am pursuing a Bachelor of Science degree in Information Technology at the University of Rizal System Binangonan Campus. I have completed all the necessary requirements to fulfill my course and I am expecting to graduate this coming June. During this time, I am actively seeking a company that can provide opportunities for me to grow in my chosen career.</p>
-            <div class="relative flex md:flex-row flex-col w-full flex-wrap gap-10 md:justify-center items-center">
+            <!-- <div class="relative flex md:flex-row flex-col w-full flex-wrap gap-10 md:justify-center items-center">
                 <div id="aboutCards" class="relative w-[250px] h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
                 hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
                 hover:drop-shadow-xl hover:-translate-y-3 transition-all">
@@ -124,6 +124,33 @@
                     <i class="bi bi-award text-[6rem]"></i>
                     <h1 class="font-bold text-[1rem]">Awards & Certifications</h1>
                 </div>
+            </div> -->
+
+             <!-- Swiper about me -->
+            <div class="swiper mySwiper text-center w-full h-[310px] flex justify-center">
+                <div class="swiper-wrapper">
+                    <div id="aboutCards" class="swiper-slide relative max-w-[250px] max-h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
+                    hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
+                    shadow-lg hover:-translate-y-3 transition-all">
+                        <i class="bi bi-person-lines-fill text-[6rem]"></i>
+                        <h1 class="font-bold text-[1rem]">Personal Information</h1>
+                    </div>
+
+                    <div id="aboutCards" class="swiper-slide relative max-w-[250px] max-h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
+                    hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
+                    shadow-lg hover:-translate-y-3 transition-all">
+                        <i class="bi bi-book text-[6rem]"></i>
+                        <h1 class="font-bold text-[1rem]">Educational Attainment</h1>
+                    </div>
+
+                    <div id="aboutCards" class="swiper-slide relative max-w-[250px] max-h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
+                    hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
+                    shadow-lg hover:-translate-y-3 transition-all">
+                        <i class="bi bi-award text-[6rem]"></i>
+                        <h1 class="font-bold text-[1rem]">Awards & Certifications</h1>
+                    </div>
+                </div>
+                <div class="swiper-pagination bottom-0"></div>
             </div>
         </section>
 
@@ -237,9 +264,27 @@
 
     <!-- script -->
     <script src="./index.js"></script>
+    <!-- aos -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script>
         AOS.init();
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: "auto",
+            centeredSlides: true,
+            breakpoints: {
+                1024: {
+                    
+                },
+            },
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
     </script>
 </body>
 </html>
