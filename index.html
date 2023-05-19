@@ -68,14 +68,8 @@
         </label>
     </header>
 
-    <!-- Elements -->
-    <!-- <div class="absolute max-w-[1440px] w-full">
-        <img class="w-[30vw] max-w-[400px] min-w-[200px] absolute md:top-[200px] right-[10vw] xl:right-[100px] top-[250px]" src="./src/resources/g1.png" data-aos="zoom-in-up" data-aos-easing="ease-out-cubic"  data-aos-delay="1000" alt="" srcset="">
-        <img class="w-[15vw] max-w-[200px] min-w-[100px] absolute md:top-[150px] right-[30vw] xl:right-[450px] top-[450px]" src="./src/resources/g2.png" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic" data-aos-delay="1000" alt="" srcset="">
-    </div> -->
-        
     <!-- sections -->
-    <div class="w-full flex flex-col justify-center items-center bg-theme-white/30 dark:bg-theme-black/30 overflow-x-hidden" id="pageWrapper">
+    <div class="w-full flex flex-col justify-center items-center bg-theme-white dark:bg-theme-black overflow-x-hidden" id="pageWrapper">
         <!-- Hero section -->
         <section class="relative flex md:flex-row max-w-[1440px] flex-col justify-center items-center gap-5 z-0 h-fit mt-10 md:mx-[10%] mx-[5%]" id="hero">
             <!-- Hero section left side -->
@@ -92,42 +86,22 @@
         <!-- about -->
         <div id="about" class="scroll-mt-[-150px]"></div>
 
-        <img class="absolute z-[-1] lg:w-[350px] sm:w-[300px] w-[250px] left-0 md:top-[400px] top-[550px]" src="./src/resources/about-elem.png" alt="">
+        <img class="absolute z-[1] lg:w-[350px] sm:w-[300px] w-[250px] left-0 md:top-[400px] top-[550px]
+        blur-3xl" src="./src/resources/about-elem.png" alt="">
 
-        <img class="absolute z-[-1] lg:w-[400px] sm:w-[350px] w-[300px]  right-0 md:top-[700px] sm:top-[900px] top-[1000px]" src="./src/resources/about-elem2.png" alt="">
+        <img class="absolute z-[0] lg:w-[400px] sm:w-[350px] w-[300px]  right-0 md:top-[1440px] sm:top-[1000px] top-[1500px]
+        blur-3xl" src="./src/resources/about-elem2.png" alt="">
 
-        <section class="relative mt-52 flex flex-col items-center md:mx-[10%] mx-[5%] gap-2 max-w-[1440px] w-[-webkit-fill-available]">
+        <section class="relative mt-52 flex flex-col items-center md:mx-[10%] mx-[5%] gap-2 max-w-[1440px] z-[2] w-[-webkit-fill-available]">
             <div class="grid grid-cols-[repeat(2,auto)]">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ME</h1>
             </div>
 
-            <p class="mb-5 text-justify text-theme-black dark:text-theme-white font-medium">Hello, my name is Jeffrey Lonzanida and I am pursuing a Bachelor of Science degree in Information Technology at the University of Rizal System Binangonan Campus. I have completed all the necessary requirements to fulfill my course and I am expecting to graduate this coming June. During this time, I am actively seeking a company that can provide opportunities for me to grow in my chosen career.</p>
-            <!-- <div class="relative flex md:flex-row flex-col w-full flex-wrap gap-10 md:justify-center items-center">
-                <div id="aboutCards" class="relative w-[250px] h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
-                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
-                hover:drop-shadow-xl hover:-translate-y-3 transition-all">
-                    <i class="bi bi-person-lines-fill text-[6rem]"></i>
-                    <h1 class="font-bold text-[1rem]">Personal Information</h1>
-                </div>
-
-                <div id="aboutCards" class="relative w-[250px] h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
-                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
-                hover:drop-shadow-xl hover:-translate-y-3 transition-all">
-                    <i class="bi bi-book text-[6rem]"></i>
-                    <h1 class="font-bold text-[1rem]">Educational Attainment</h1>
-                </div>
-
-                <div id="aboutCards" class="relative w-[250px] h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
-                hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
-                hover:drop-shadow-xl hover:-translate-y-3 transition-all">
-                    <i class="bi bi-award text-[6rem]"></i>
-                    <h1 class="font-bold text-[1rem]">Awards & Certifications</h1>
-                </div>
-            </div> -->
+            <p class="mb-5 text-justify text-theme-black dark:text-theme-white indent-10 text-[1rem]">Hello, my name is Jeffrey Lonzanida and I am pursuing a Bachelor of Science degree in Information Technology at the University of Rizal System Binangonan Campus. I have completed all the necessary requirements to fulfill my course and I am expecting to graduate this coming June. During this time, I am actively seeking a company that can provide opportunities for me to grow in my chosen career.</p>
 
              <!-- Swiper about me -->
-            <div class="swiper mySwiper text-center w-full h-[310px] flex justify-center">
+            <div class="swiper mySwiper text-center w-full h-[310px]">
                 <div class="swiper-wrapper">
                     <div id="aboutCards" class="swiper-slide relative max-w-[250px] max-h-[270px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
                     hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex flex-col items-center
@@ -150,85 +124,76 @@
                         <h1 class="font-bold text-[1rem]">Awards & Certifications</h1>
                     </div>
                 </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-pagination bottom-0"></div>
             </div>
         </section>
 
         <!-- skills -->
         <div id="skills" class="scroll-mt-[-150px]"></div>
-        <section id="skillsSec" class="relative mt-52 w-full h-fit flex flex-col items-center bg-[url('../src/resources/bg-skills.jpg')]
-        bg-no-repeat bg-fixed bg-cover bg-center">
-            <div class="custom-shape-divider-top-1683958950 fill-theme-white dark:fill-theme-black">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
-            </div>
+        <section id="skillsSec" class="relative mt-52 w-full h-fit flex flex-col items-center">
+
             <div class="grid grid-cols-1 mb-2 max-w-[1440px] text-center mx-[5%] md:mx-[10%]">
-                <h1 class="font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">SKILLS</h1>
-                <p class="font-medium text-[1.2rem]">I have experience with these technologies</p>
+                <div class="grid grid-cols-[repeat(2,auto)]">
+                    <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem] text-end">SKILL</h1>
+                    <h1 class="text-start bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
+                </div>
+                <p class="font-medium text-[1.2rem] dark:text-theme-white">I have experience with these technologies</p>
             </div>
-            <div class="grid lg:grid-cols-7 sm:grid-cols-5 xs:grid-cols-4 grid-cols-3 xs:gap-5 gap-4 items-center justify-center max-w-[1440px] mx-[5%] md:mx-[10%] mt-2 mb-44">
+            <div class="grid lg:grid-cols-7 sm:grid-cols-5 xs:grid-cols-4 grid-cols-3 xs:gap-5 gap-4 items-center justify-center max-w-[1440px] mx-[5%] md:mx-[10%] mt-2">
                 <img src="./src/resources/skills/react.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/tailwind.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/material ui.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/html5.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/css.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/js.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/jquery.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/swiperjs.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/bootstrap.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/mysql.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/php.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/prestashop.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/wix.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/unity.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/git.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/github.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70 backdrop-blur-sm">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/csharp.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/c++.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/java.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/figma.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/ai.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/ps.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
                 <img src="./src/resources/skills/canva.png" alt="" class="max-h-[100px] max-w-[100px] w-full rounded-md hover:-translate-y-2 transition-all
-                hover:drop-shadow-xl p-2 bg-theme-white/70 dark:bg-theme-black/70">
-            </div>
-            <div class="custom-shape-divider-bottom-1683960546 fill-theme-white dark:fill-theme-black">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-                </svg>
+                hover:drop-shadow-xl p-2 bg-theme-lblue">
             </div>
         </section>
 
         <!-- projects -->
         <div id="projects" class="scroll-mt-[-150px]"></div>
-        <section class="relative mt-32 w-full flex flex-col items-center max-w-[1440px]">
+        <section class="relative mt-52 w-full flex flex-col items-center max-w-[1440px] mx-[5%] md:mx-[10%]">
             <div class="grid grid-cols-[repeat(2,auto)] mb-2">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">PROJECT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
@@ -236,16 +201,46 @@
         </section>
 
         <!-- contacts -->
-        <div id="contacts" class="scroll-mt-[-150px] "></div>
-        <section class="relative mt-52 w-full flex flex-col items-center max-w-[1440px]">
+        <div id="contacts" class="scroll-mt-[-150px]"></div>
+        <section class="relative mt-52 w-[-webkit-fill-available] flex flex-col items-center gap-5 max-w-[1440px] mx-[5%] md:mx-[10%]">
             <div class="grid grid-cols-[repeat(2,auto)] mb-2">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">CONTACT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
             </div>
+            <div class="flex md:flex-row flex-col w-full gap-5 bg-gradient-to-r from-teal-300 to-sky-500 py-10 rounded-xl">
+                <div class="flex flex-col justify-center md:w-[50%] w-full md:order-1 order-2">
+                    <div class="h-fit flex flex-col bg-theme-white dark:bg-theme-black rounded-e-full
+                    md:mr-0 mr-10 py-10 border-r-8 border-y-8">
+                        <div class="grid xs:grid-cols-2 grid-cols-1 md:w-fit w-full gap-5 dark:text-theme-white items-start">
+                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
+                                <i class="bi bi-facebook text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="">Jeffrey Lonzanida</a>
+                            </div>
+                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
+                                <i class="bi bi-github text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="">ifejinity</a>
+                            </div>
+                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
+                                <i class="bi bi-linkedin text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="">Jeffrey Lonzanida</a>
+                            </div>
+                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
+                                <i class="bi bi-envelope-at text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="">mrlonzanida08 @gmail.com</a>
+                            </div>
+                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
+                                <i class="bi bi-telephone text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="">09305303720</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:w-[50%] w-full flex justify-center md:order-2">
+                    <img src="./src/resources/contact.png" alt="" srcset="">
+                </div>
+
+            </div>
         </section>
 
-        <footer class="w-full h-[100px] max-w-[1440px]">
-
+        <footer class="w-full h-[100px] max-w-[1440px] flex justify-center items-center mx-[5%] md:mx-[10%] text-center
+        dark:text-theme-white font-medium">
+            Built and Designed by: Lonzanida, Jeffrey B.
         </footer>
     </div>
 
@@ -278,15 +273,14 @@
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: "auto",
             centeredSlides: true,
-            breakpoints: {
-                1024: {
-                    
-                },
-            },
+            initialSlide: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
-                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
             },
         });
     </script>

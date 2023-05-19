@@ -25,6 +25,7 @@ module.exports = {
         'navDesktopBtn': 'repeat(6, auto)',
         'timeLineDesktop' : '1fr auto 1fr',
         'timeLineMobile' : 'auto 1fr',
+        'contact' : 'auto 1fr',
       },
       colors:{
         'theme-black': '#1D242B',
