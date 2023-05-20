@@ -1,14 +1,15 @@
 const navbarMobile = document.querySelector("#navbarMobile");
 const navbarCheckbox = document.querySelector("#checkboxNavbar");
 
-navbarCheckbox.addEventListener("click", function(){
+navbarCheckbox.addEventListener("click", navbarCheck);
+function navbarCheck(){
     if(this.checked){
         navbarMobile.style.right = "0";
     }
     else{
         navbarMobile.style.right = "-100vh";
     }
-});
+};
 
 // Darkmode function
 const modeToggle = document.querySelectorAll(".input");
@@ -294,4 +295,36 @@ for (let navButtonItems of navButtonsDesktop){
             window.location.href = "#contacts";
         }
     });
+}
+
+// nav mobile button
+const navButtonsMobile = document.querySelectorAll("#navButtonMobile");
+for (let navButtonMobile of navButtonsMobile){
+    navButtonMobile.addEventListener("click", function(){
+        if (this === navButtonsMobile[0]){
+            window.scrollTo(0, 0);
+        }
+
+        if (this === navButtonsMobile[1]){
+            window.location.href = "#about";
+        }
+
+        if (this === navButtonsMobile[2]){
+            window.location.href = "#skills";
+        }
+
+        if (this === navButtonsMobile[3]){
+            window.location.href = "#projects";
+        }
+
+        if (this === navButtonsMobile[4]){
+            window.location.href = "#contacts";
+        }
+        navbarClose();
+    });
+}
+
+function navbarClose(){
+    navbarCheckbox.checked = false;
+    navbarCheck();
 }
