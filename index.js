@@ -324,6 +324,7 @@ for (let navButtonMobile of navButtonsMobile){
     });
 }
 
+// function to close the navbar after navigating
 function navbarClose(){
     navbarCheckbox.checked = false;
     navbarCheck();
