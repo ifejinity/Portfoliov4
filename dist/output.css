@@ -2337,6 +2337,10 @@ video {
   vertical-align: super;
 }
 
+.font-outfit {
+  font-family: Outfit, sans-serif;
+}
+
 .text-3xl {
   font-size: 1.953rem;
 }
@@ -3046,13 +3050,13 @@ video {
 
 /* modal content scroll bar */
 
-#modalContent::-webkit-scrollbar {
+*::-webkit-scrollbar {
   display: none;
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
 
-#modalContent {
+* {
   -ms-overflow-style: none;
   /* IE and Edge */
   scrollbar-width: none;

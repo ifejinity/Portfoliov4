@@ -16,6 +16,9 @@ module.exports = {
       '5xl': '3.052rem',
     },
     extend: {
+      fontFamily:{
+        'outfit' : ['Outfit, sans-serif'],
+      },
       screens: {
         'xxs': '320px',
         'xs': '425px',
