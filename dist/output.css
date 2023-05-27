@@ -3330,6 +3330,10 @@ video {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -3340,6 +3344,10 @@ video {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:gap-10 {
+    gap: 2.5rem;
   }
 
   .md\:text-start {
