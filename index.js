@@ -1,3 +1,15 @@
+// Darkmode Reload
+const headElement = document.documentElement;
+window.addEventListener("load", function(){
+    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        headElement.classList.add('dark');
+        modeToggle[0].checked = true;
+        modeToggle[1].checked = true;
+    } else {
+        headElement.classList.remove('dark');
+    }
+});
+
 const navbarMobile = document.querySelector("#navbarMobile");
 const navbarCheckbox = document.querySelector("#checkboxNavbar");
 
@@ -42,16 +54,6 @@ for (let modeToggleAll of modeToggle){
         }
     });
 }
-// Darkmode Reload
-window.addEventListener("load", function(){
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        modeToggle[0].checked = true;
-        modeToggle[1].checked = true;
-    } else {
-        document.documentElement.classList.remove('dark');
-    }
-});
 
 // closeCert
 const certModal = document.querySelector("#certModal");

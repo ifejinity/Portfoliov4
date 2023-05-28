@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html class="dark scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- animate css -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" async>
 </head>
 <body class="flex items-center flex-col dark:bg-theme-black bg-theme-white overflow-x-hidden font-outfit">
 
@@ -26,7 +26,7 @@
     <div id="aboutModal" class="w-screen h-screen fixed hidden justify-center items-center bg-theme-black/30 dark:bg-theme-white/30 z-[21]">
         <!-- about cards modal -->
         <div id="modalAboutCards" class="relative w-full mx-5 max-w-[700px] max-h-[600px] h-fit dark:bg-theme-black bg-theme-white rounded-xl shadow-xl py-5 flex flex-col
-        gap-2">
+        gap-2 animate__bounceInDown animate__bounceIn">
             <div class="w-full pb-2 px-5 flex sticky top-0 justify-between items-center dark:bg-theme-black bg-theme-white z-[1]">
                 <h1 id="modalHeader" class="font-bold text-[1.2rem] dark:text-theme-white text-theme-black"></h1>
                 <i id="aboutmodalClose" class="bi bi-x-lg text-theme-black dark:text-theme-white font-bold text-[1.2rem] hover:bg-theme-black
@@ -40,7 +40,7 @@
 
     <!-- modal certificates -->
     <div id="certModal" class="w-full h-screen fixed z-[21] justify-center items-center hidden backdrop-blur-sm">
-        <img id="certItems" class="w-full max-w-[900px] cursor-zoom-out">
+        <img id="certItems" class="w-full max-w-[900px] cursor-zoom-out animate__bounceIn animate__zoomIn">
     </div>
 
     <!-- header -->
