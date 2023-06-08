@@ -92,13 +92,6 @@
 
         <!-- about -->
         <div id="about" class="scroll-mt-[-150px]"></div>
-
-        <img class="absolute z-[1] lg:w-[350px] sm:w-[300px] w-[250px] left-0 md:top-[400px] top-[550px]
-        blur-3xl" src="./src/resources/about-elem.png" alt="">
-
-        <img class="absolute z-[0] lg:w-[400px] sm:w-[350px] w-[300px]  right-0 md:top-[1440px] sm:top-[1000px] top-[1500px]
-        blur-3xl" src="./src/resources/about-elem2.png" alt="">
-
         <section class="relative mt-52 flex flex-col items-center md:mx-[10%] mx-[5%] gap-2 max-w-[1440px] z-[2] w-[-webkit-fill-available]">
             <div class="grid grid-cols-[repeat(2,auto)]">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">ABOUT</h1>
@@ -135,7 +128,7 @@
             </div>
 
              <!-- Swiper about me -->
-            <div class="swiper mySwiper text-center w-full h-full relative">
+            <!-- <div class="swiper mySwiper text-center w-full h-full relative">
                 <div class="swiper-wrapper pb-5">
                     <div id="aboutCards" class="swiper-slide relative max-w-[280px] max-h-[300px] border-solid border-theme-black rounded-xl p-5 bg-gray-200 dark:bg-gray-800 dark:text-theme-white
                     hover:bg-gradient-to-r from-teal-300 dark:hover:text-theme-black to-sky-500 flex items-center justify-center
@@ -160,7 +153,7 @@
                 </div>
                 <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
-            </div>
+            </div> -->
         </section>
 
         <!-- skills -->
@@ -497,10 +490,13 @@
 
         <!-- contacts -->
         <div id="contacts" class="scroll-mt-[-150px]"></div>
-        <section class="relative mt-52 w-[-webkit-fill-available] flex flex-col items-center gap-5 max-w-[1440px] mx-[5%] md:mx-[10%]">
-            <div class="grid grid-cols-[repeat(2,auto)] mb-2">
+        <section class="relative mt-52 w-[-webkit-fill-available] flex flex-col items-center max-w-[1440px] mx-[5%] md:mx-[10%]">
+            <div class="grid grid-cols-[repeat(2,auto)]">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">CONTACT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
+            </div>
+            <div>
+                <p class="text-[1.1rem] text-center mb-2 dark:text-white">Let's embark on a meaningful conversation and create something extraordinary together.</p>
             </div>
             <div class="flex md:flex-row flex-col w-full gap-5 bg-gradient-to-r from-teal-300 to-sky-500 py-10 rounded-xl">
                 <div class="flex flex-col justify-center md:w-[50%] w-full md:order-1 order-2">
@@ -518,9 +514,6 @@
                             <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
                                 <i class="bi bi-linkedin text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="https://www.linkedin.com/in/jeffrey-lonzanida-700559253/"
                                     target="_blank">Jeffrey Lonzanida</a>
-                            </div>
-                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
-                                <i class="bi bi-envelope-at text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="mailto: mrlonzanida08@gmail.com">mrlonzanida08 @gmail.com</a>
                             </div>
                             <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
                                 <i class="bi bi-telephone text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="tel:09305303720">09305303720</a>
@@ -572,8 +565,6 @@
         AOS.init();
         var swiper = new Swiper(".mySwiper", {
             slidesPerView: "auto",
-            centeredSlides: true,
-            initialSlide: 1,
             spaceBetween: 30,
             pagination: {
                 el: ".swiper-pagination",
