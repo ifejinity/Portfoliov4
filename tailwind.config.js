@@ -38,7 +38,12 @@ module.exports = {
       },
       width: {
         'logo': '50px',
-      }, 
+      },
+      animation: {
+        'bounce-slow': 'bounce 5s linear infinite',
+        'bounce-slower': 'bounce 6s linear infinite',
+        'bounce-slowest': 'bounce 7s linear infinite',
+      },
     },
   },
   plugins: [],
