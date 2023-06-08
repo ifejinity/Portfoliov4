@@ -331,3 +331,4 @@ function navbarClose(){
     navbarCheckbox.checked = false;
     navbarCheck();
 }
+
