@@ -16,6 +16,16 @@ module.exports = {
       '5xl': '3.052rem',
     },
     extend: {
+      keyframes: {
+        updown: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-50px)' },
+        },
+      },
+      animation: {
+        updown1: 'updown 7s ease-in-out infinite',
+        updown2: 'updown 9s ease-in-out infinite',
+      },
       fontFamily:{
         'outfit' : ['Outfit, sans-serif'],
       },
@@ -38,11 +48,6 @@ module.exports = {
       },
       width: {
         'logo': '50px',
-      },
-      animation: {
-        'bounce-slow': 'bounce 5s linear infinite',
-        'bounce-slower': 'bounce 6s linear infinite',
-        'bounce-slowest': 'bounce 7s linear infinite',
       },
     },
   },
