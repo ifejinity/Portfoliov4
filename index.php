@@ -13,12 +13,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <!-- swiper js -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <!-- gfonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <!-- animate css -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" async> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> -->
 </head>
 <body class="flex items-center flex-col dark:bg-theme-black bg-theme-white overflow-x-hidden font-outfit">
 
@@ -54,7 +56,7 @@
     <!-- sections -->
     <div class="w-full flex flex-col justify-center items-center bg-theme-white dark:bg-theme-black overflow-x-hidden" id="pageWrapper">
         <!-- Hero section -->
-        <section class="relative h-fit flex md:flex-row max-w-[1440px] flex-col justify-center items-center gap-5 z-[2] md:mx-[10%] mx-[5%]" id="hero">
+        <section class="relative h-[80vh] flex md:flex-row max-w-[1440px] flex-col justify-center items-center gap-5 z-[2] md:mx-[10%] mx-[5%]" id="hero">
             <!-- Hero section left side -->
             <div class="relative md:w-[45%] flex flex-col justify-center md:justify-start h-fit">
                 <h1 class="text-theme-black font-black text-3xl md:text-[4vw] xl:text-[50px] leading-none dark:text-theme-white md:text-start text-center" data-aos="fade-right" data-aos-delay="100">Hi there, I am</h1>
@@ -190,7 +192,10 @@
         <!-- projects -->
         <div id="projects" class="scroll-mt-[-150px]"></div>
         <section class="relative mt-52 w-[-webkit-fill-available] flex flex-col items-center max-w-[1440px] mx-[5%] md:mx-[10%]">
-            <div class="grid grid-cols-[repeat(2,auto)] mb-2">
+            <img src="./src/resources/Untitled design (14).png" class="absolute z-[0] w-[30vw] max-w-[100px] top-[0] right-[-10%] animate-updown2">
+            <img src="./src/resources/Untitled design (10).png" class="absolute z-[0] w-[70vw] max-w-[300px] bottom-[-20%] right-[-20%] animate-updown1">
+
+            <div class="grid grid-cols-[repeat(2,auto)] mb-2 z-[1]">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">PROJECT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
             </div>
@@ -410,48 +415,33 @@
 
         <!-- contacts -->
         <div id="contacts" class="scroll-mt-[-150px]"></div>
-        <section class="relative mt-52 w-[-webkit-fill-available] flex flex-col items-center max-w-[1440px] mx-[5%] md:mx-[10%]">
-            <div class="grid grid-cols-[repeat(2,auto)]">
+        <section class="relative mt-52 w-full flex flex-col items-center bg-gray-200 dark:bg-gray-800 py-5">
+            <div class="grid grid-cols-[repeat(2,auto)] mx-[5%] md:mx-[10%]">
                 <h1 class="font-black text-theme-black dark:text-theme-white text-[2rem] md:text-[3.5vw] xl:text-[3rem]">CONTACT</h1>
                 <h1 class="bg-clip-text text-transparent bg-gradient-to-r from-teal-300 to-sky-500 font-black text-[2rem] md:text-[3.5vw] xl:text-[3rem]">S</h1>
             </div>
-            <div>
+            <div class="mx-[5%] md:mx-[10%]">
                 <p class="text-[1.1rem] text-center mb-2 dark:text-white">Let's embark on a meaningful conversation and create something extraordinary together.</p>
             </div>
-            <!-- <div class="flex md:flex-row flex-col w-full gap-5 bg-gradient-to-r from-teal-300 to-sky-500 py-10 rounded-xl">
-                <div class="flex flex-col justify-center md:w-[50%] w-full md:order-1 order-2">
-                    <div class="h-fit flex flex-col bg-theme-white dark:bg-theme-black rounded-e-full
-                    md:mr-0 mr-10 py-10 border-r-8 border-y-8 border-gray-200">
-                        <div class="grid xs:grid-cols-2 grid-cols-1 md:w-fit w-full gap-5 dark:text-theme-white items-start">
-                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
-                                <i class="bi bi-facebook text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="https://www.facebook.com/ifejinity"
-                                    target="_blank">Jeffrey Lonzanida</a>
-                            </div>
-                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
-                                <i class="bi bi-github text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="https://github.com/ifejinity"
-                                    target="_blank">Jeffrey Lonzanida</a>
-                            </div>
-                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
-                                <i class="bi bi-linkedin text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="https://www.linkedin.com/in/jeffrey-lonzanida-700559253/"
-                                    target="_blank">Jeffrey Lonzanida</a>
-                            </div>
-                            <div class="flex flex-row gap-3 items-center hover:text-theme-dblue">
-                                <i class="bi bi-telephone text-[2rem]"></i class="text-[1.5rem] font-medium"><a href="tel:09305303720">09305303720</a>
-                            </div>
+            <div class="w-[-webkit-fill-available] md:p-10 pt-10 max-w-[1440px] mx-[5%] md:mx-[10%]">
+                <form name="mail" id="mail">
+                    <div class="w-full flex flex-col gap-5 justify-center items-center">
+                        <div class="grid md:grid-cols-2 grid-cols-1 gap-5 w-full">
+                            <input type="text" name="fname" id="fname" placeholder="Full name" class="p-3 outline-none rounded-lg" required>
+                            <input type="email" name="email" id="email" placeholder="Email" class="p-3 outline-none rounded-lg" required>
                         </div>
+                        <textarea name="message" id="message" cols="30" rows="5" class="resize-none p-3 outline-none w-full rounded-lg" placeholder="Message" required></textarea>
+                        
+                        <button type="submit" name="send" id="send" class="max-w-[200px] w-full font-medium text-[1rem] bg-theme-dblue rounded-xl p-3 hover:opacity-90 hover:-translate-y-1 transition-all hover:drop-shadow-md text-white flex justify-center">SEND</button>
                     </div>
-                </div>
-
-                <div class="md:w-[50%] w-full flex justify-center md:order-2">
-                    <img src="./src/resources/contact.png" alt="" srcset="">
-                </div>
-
-            </div> -->
+                </form>
+            </div>
         </section>
 
-        <footer class="w-[-webkit-fill-available] h-[100px] max-w-[1440px] flex justify-center items-center mx-[5%] md:mx-[10%] text-center
-        dark:text-theme-white font-medium">
-            Built and Designed by: Lonzanida, Jeffrey B.
+        <footer class="w-full py-5 flex justify-center items-center text-center dark:text-theme-white font-medium bg-gray-300 dark:bg-gray-900">
+            <div class="[-webkit-fill-available] mx-[5%] md:mx-[10%]">
+                <p>Built and Designed by: Lonzanida, Jeffrey B.</p>
+            </div>
         </footer>
     </div>
 
@@ -495,7 +485,6 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-
     </script>
 </body>
 </html>
